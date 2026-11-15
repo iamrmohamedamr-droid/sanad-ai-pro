@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import SpeechToText from "./SpeechToText";
 type CameraStatus = "idle" | "starting" | "running" | "error";
 
 export default function App() {
@@ -496,6 +496,15 @@ export default function App() {
       <footer>
         <span className="brand-footer">سند · SANAD AI</span>
         <span>التكنولوجيا لخدمة الإنسان</span>
+          <section
+        id="hearing"
+        style={{
+          padding: "40px 5%",
+          background: "#f4f8ff"
+        }}
+      >
+        <SpeechToText />
+      </section>
       </footer>
     </main>
   );
