@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 
 type CameraStatus = "idle" | "starting" | "running" | "error";
